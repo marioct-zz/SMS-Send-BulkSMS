@@ -4,6 +4,7 @@ lib/SMS/Send/BulkSMS.pm
 LICENSE
 Makefile.PL
 MANIFEST
+META.json
 META.yml
 README.pod
 t/00-compile.t

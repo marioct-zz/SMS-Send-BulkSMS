@@ -56,7 +56,7 @@ sub send_sms {
         return 1;
     }
     else {
-        warn "send_sms failed: $result_code, $result_string" if $args{_verbose};
+        warn "send_sms failed: $result_code;$result_string" if $args{_verbose};
         return 0;
     }
     print "\n";
@@ -102,7 +102,7 @@ version 0.02
 
 =head1 DESCRIPTION
 
-This module currently uses the L<HTTP API|http://www.bulksms.com/>.
+This module currently uses the L<HTTP API|http://developer.bulksms.com/eapi>.
 
 =head1 METHODS
 

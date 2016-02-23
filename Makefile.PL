@@ -4,7 +4,7 @@ use ExtUtils::MakeMaker;
 my %WriteMakefileArgs = (
     'NAME'             => 'SMS::Send::BulkSMS',
     'VERSION'          => '0.01',
-    'ABSTRACT'         => 'SMS::Send driver for the internation BulkSMS service',
+    'ABSTRACT'         => 'SMS::Send driver for the international BulkSMS service',
     'AUTHOR'           => 'Mario Celso Teixeira <marioct37@gmail.com>',
     'BUILD_REQUIRES' => {
         'Carp' => '0',

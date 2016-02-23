@@ -3,7 +3,7 @@ package SMS::Send::BulkSMS;
 use strict;
 use warnings;
 
-$SMS::Send::BulkSMS::VERSION = '0.01';
+$SMS::Send::BulkSMS::VERSION = '0.02';
 
 # ABSTRACT: SMS::Send driver for the International BulkSMS service
 
@@ -78,7 +78,7 @@ SMS::Send::BulkSMS - SMS::Send driver for the International BulkSMS service
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

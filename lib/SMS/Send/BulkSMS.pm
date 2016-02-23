@@ -49,19 +49,14 @@ sub send_sms {
     croak $response->{content}
         unless $response->{success};
         
-    if ($response->is_error) {
-        die "HTTP request error, with error code ".$response->code.
-        ", and body:\n\n".$response->error_as_HTML;
-    }
-
-    my ($result_code, $result_string, $batch_id) = split(/\|/, $response->content);
+    my ($result_code, $result_string, $batch_id) = split(/\|/, $response->{content});
 
     if ($result_code eq '0') {
         warn "send_sms succeeded: $batch_id" if $args{_verbose};
         return 1;
     }
     else {
-        warn "send_sms failed: $result_code: $result_string" if $args{_verbose};
+        warn "send_sms failed: $result_code, $result_string" if $args{_verbose};
         return 0;
     }
     print "\n";
